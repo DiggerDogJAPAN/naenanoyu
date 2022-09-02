@@ -512,6 +512,7 @@ main {
     max-width: 128rem;
     margin: 14rem auto 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .services_container {
