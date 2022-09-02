@@ -642,12 +642,17 @@ p {
 /*=============== FOOTER ===============*/
 
 footer {
-    width: 100%;
+    width: 100vw;
     margin: 8rem auto 0 auto;
     background-color: var(--title-color);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
+}
+
+.footer_container {
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 /*=============== BREAKPOINTS ===============*/
