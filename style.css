@@ -95,13 +95,36 @@ a:active {
     text-align: left;
 }
 
-.zindex {
+/* .zindex {
     z-index: 2;
-}
+} */
 
 .dot_color {
     color: var(--title-color);
 }
+
+/*=============== ANIMATION =================*/
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.services--item:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.services--item:nth-child(4) {
+    transition-delay: 300ms;
+}
+
 
 /*=============== HEADER & NAV ===============*/
 
@@ -310,8 +333,6 @@ main {
     flex-direction: column;
     align-self: flex-end;
     position: relative;
-    opacity: 0;
-    transition: 0.8s ease-in;
 }
 
 .news_content--info {
@@ -320,15 +341,10 @@ main {
     width: 60%;
 }
 
-.news_content--txt {
-    opacity: 0;
-    transition: 0.8s ease-in;
-}
+
 
 .news_content--img {
     position: relative;
-    opacity: 0;
-    transition: 0.8s ease-in;
 }
 
 .news_image {
@@ -416,8 +432,6 @@ main {
 .info_container--left {
     width: 40%;
     z-index: 2;
-    opacity: 0;
-    transition: 0.8s ease-in;
 }
 
 .info_container--left img {
@@ -432,8 +446,6 @@ main {
     gap: 2rem;
     z-index: 2;
     position: relative;
-    opacity: 0;
-    transition: 0.8s ease-in;
 }
 
 .info_container--right--img {
@@ -449,8 +461,6 @@ main {
     width: 50%;
     padding: 0;
     position: relative;
-    opacity: 0;
-    transition: 0.8s ease-in;
 }
 
 .info_container--right--text h3 {
@@ -467,8 +477,8 @@ main {
 .info_container--right--pattern {
     position: absolute;
     bottom: 7%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 7%;
+    
     width: 22rem;
     opacity: .2;
 }
@@ -536,14 +546,14 @@ main {
 }
 
 .services--item {
-    background-color: var(--background-color);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
     overflow: hidden;
     box-shadow:
-     0px 0.9px 0.9px rgba(0, 0, 0, 0.042),
-     0px 2.5px 2.5px rgba(0, 0, 0, 0.06),
-     0px 6px 6px rgba(0, 0, 0, 0.078),
-     0px 20px 20px rgba(0, 0, 0, 0.12);
+    0px 0.5px 0.9px rgba(0, 0, 0, 0.035),
+    0px 1.3px 2.5px rgba(0, 0, 0, 0.05),
+    0px 3px 6px rgba(0, 0, 0, 0.065),
+    0px 10px 20px rgba(0, 0, 0, 0.1);  
 }
 
 .services--item-content {
