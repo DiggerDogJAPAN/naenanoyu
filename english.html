@@ -6,7 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naena no Yu - Natural Hotsprings</title>
+    <!-- SEO -->
+    <meta name="description" content="Suginosawa public onsen bath. Open daily for visitors.">
+    <meta name=”robots” content="index, follow">
+    <!-- OG FACEBOOK CARD --> 
+    <meta property="og:title" content="Naena no Yu - Natural Hotsprings"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://naenanoyu.com"/>
+    <meta property="og:image" content="https://naenanoyu.com/images/苗名の湯の温泉.jpg"/>       
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="naenanoyu.com">
+    <meta property="og:description" content="Suginosawa public onsen bath. Open daily for visitors.">
+    <!-- Scripts -->
     <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +28,188 @@
 </head>
 
 <body>
+    <!-- //////////////////////////////   HEADER BLOCK STICKY   ///////////////////////////////////// -->
+    <header>
 
+        <nav class="nav">
+            <a href="https://sugi-kan.com" class="button" target="_blank" rel="noopener noreferrer">Tourist Office</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="https://goo.gl/maps/bC45oJCoej4vV4ERA" class="nav__link" target="_blank"
+                            rel="noopener noreferrer nofollow"><img src="./assets/pin.png" class="map-pin">杉野沢2030</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tel:0255-86-6000" class="nav__link"><span class="bold-text">PN:</span>
+                            0255-86-6000</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/index.html" class="nav__link"><span class="bold-text">日本語</span></a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- //////////////////////////////   MAIN SECTION   ///////////////////////////////////// -->
+    <main>
+        <section class="top-part">
+            <h1 class="hidden">Naena no Yu</h1>
+            <div class="subtitle hidden">ー　Natural Hotsprings　ー</div>
+            <p class="m-600 left hidden">Suginosawa's only day-trip hot spring facility.
+                The spring is a hydrogen carbonate spring, which is characterized by an almost colorless and transparent water with little peculiarity.
+                Nearby are sightseeing spots such as Sasagamine Kogen, Mt Hiuchi, Naena Falls, and Suginohara Ski Resort. 
+                Feel free to use the onsen after mountain climbing, camping, skiing, or just for a day trip to the hot spring.
+            </p>
+            <img src="./assets/pattern.png" alt="" class="top-part--circles">
+            <img src="./assets/lines_2.png" alt="" class="top-part--right">
+            <img src="./assets/lines_2.png" alt="" class="top-part--left">
+        </section>
+
+        <div class="full-width">
+            <img src="./images/苗名の湯の温泉.jpg" alt="A photo of the Naena no Yu hotspring bath" class="main-image">
+        </div>
+    </main>
+    <!-- //////////////////////////////   NEWS SECTION   ///////////////////////////////////// -->
+
+    <section class="news">
+        <div class="circle1"><img src="./assets/circle.png"></div>
+        <div class="news_content">
+            <div class="news_content--price hidden">
+                <h3>Price Guide</h3>
+                <p>Adult(16+) … 500円<br>
+                    Child … 300円<br>
+                    Under 6 … Free
+                </p>
+            </div>
+
+            <div class="news_content--info">
+                <div class="news_content--img">
+                    <img src="./assets/square.png" class="square1">
+                    <img src="./assets/square.png" class="square2">
+                    <img src="./images/苗名の湯外.jpg" alt="苗名の湯の建物外からの画像" class="news_image hidden">
+                </div>
+                <div class="news_content--txt hidden">
+                    <p><span class="dot_color">⚫︎</span>We do not rent towels. Please bring your own.<br>
+                        <span class="dot_color">⚫︎</span>Holidays and busy periods can be very crowded.<br>
+                        <span
+                            class="dot_color">⚫︎</span>We do not store luggage. 
+                            Please manage your baggage and valuables by yourself. 
+                            We have a valuables case for small items, but please do not bring valuables if possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- //////////////////////////////   INFO SECTION   ///////////////////////////////////// -->
+
+    <section class="info">
+        <div class="info_container">
+            <div class="circle2"><img src="./assets/circle.png"></div>
+            <div class="info_container--left hidden">
+                <img src="./images/苗名の湯入口.jpg" alt="Naena no Yu entrance">
+            </div>
+            <div class="info_container--right hidden">
+                <div class="info_container--right--img">
+                    <img src="./images/苗名の湯温泉水.jpg" alt="Naena no Yu hotspring water">
+                </div>
+                <div class="info_container--right--text hidden">
+                    <h3>Opening Information</h3>
+                    <p><b>Opening Hours: 11:00 - 19:00<br>
+                        Holiday: Wednesday</b>
+                    </p>
+                    <p>
+                        Business hours may change during holidays and ski season.
+                    </p>
+                    <p>
+                        There are indoor baths for men and women on the 2nd floor. (There are no outdoor baths, saunas, etc.)
+                    </p>
+                    
+                </div>
+            </div>
+            <img src="./assets/lines_1.png" alt="" class="info_container--right--pattern">
+        </div>
+    </section>
+
+    <!-- //////////////////////////////   SERVICES SECTION   ///////////////////////////////////// -->
+
+    <section class="services">
+        <div class="services_container">
+            <h3>Naena-no-Yu Facilities</h3>
+            <div class="services_container--grid">
+                <div class="services--item hidden">
+                    <img src="./images/苗名の湯space.jpg" alt="photo of open space for resting">
+                    <div class="services--item-content">
+                        <h4>Open Space</h4>
+                        <p>There is a large room on the 1st floor and a small room on the 2nd floor, which can be used as a area to rest.</p>
+                    </div>      
+                </div>
+                <div class="services--item hidden">
+                    <img src="./images/苗名の湯昇降機.jpg" alt="a chair lift that can be used to access the second floor">
+                    <div class="services--item-content">
+                        <h4>Handicapped Assistance</h4>
+                        <p>There is a slope at the entrance of the facility and a chair lift to the second floor for the physically challenged. 
+                            (The building is not completely barrier-free so caregiver support maybe required.)</p>
+                    </div>
+                </div>
+                <div class="services--item hidden">
+                    <img src="./images/苗名の湯自動販売機.jpg" alt="vending machines selling various drinks and snacks">
+                    <div class="services--item-content">
+                        <h4>Vending Machines</h4>
+                        <p>Vending machines selling various drinks and ice cream are available.</p>
+                    </div>
+                </div>
+                <div class="services--item hidden">
+                    <img src="./images/苗名の湯massagechair.jpg" alt="Two massage chairs on the second floor">
+                    <div class="services--item-content">
+                        <h4>Massage Chair</h4>
+                        <p>There are two massage chairs on the second floor.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/lines_1.png" alt="" class="services_container--pattern">
+            <img src="./assets/circle.png" alt="" class="services_container--circle">
+        </div>
+    </section>
+
+    <!-- //////////////////////////////   GALLERY   ///////////////////////////////////// -->
+
+
+    <section class="gallery">
+        <div class="gallery_grid">
+            <div class="grid1 hidden"><img class="grid-img" src="./images/苗名の湯Gallery 1.jpg" alt="苗名の湯"></div>
+            <div class="grid2 hidden"><img class="grid-img" src="./images/苗名の湯Gallery 2.jpg" alt="苗名の湯"></div>
+            <div class="grid3 hidden"><img class="grid-img" src="./images/苗名の湯Gallery 3.jpg" alt="苗名の湯"></div>
+            <div class="grid4 hidden"><img class="grid-img" src="./images/苗名の湯Gallery 4.jpg" alt="苗名の湯"></div>
+            <div class="grid5 hidden"><img class="grid-img" src="./images/苗名の湯Gallery 5.jpg" alt="苗名の湯"></div>
+            <div class="grid6 hidden"><img class="grid-img" src="./images/苗名の湯Gallery 6.jpg" alt="苗名の湯"></div>
+        </div>
+    </section>
+
+    <!-- //////////////////////////////   FOOTER   ///////////////////////////////////// -->
+
+    <footer>
+        <div class="footer_container">
+        <p>Copyright © 2022 Suginosawa Tourist Office</p>
+    </div>
+    </footer>
+
+
+
+    <!-- //////////////////////////////   - script & end -  ///////////////////////////////////// -->
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
 
 </html>
